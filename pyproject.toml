@@ -13,7 +13,7 @@ certifi = "^2021.10.8"
 cffi = "1.15.0"
 chardet = "3.0.4"
 click = "7.1.2"
-common = "0.0.19"
+common = { git = "https://github.com/vre-charite-autodeploy/service_common.git", branch="main" }
 docopt = "0.6.2"
 gunicorn = "20.0.4"
 hdfs = "2.5.8"
@@ -61,8 +61,3 @@ addopts = "--cov logger --cov-report term"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[[tool.poetry.source]]
-name = "pilot"
-url = "https://git.bihealth.org/api/v4/groups/vre/-/packages/pypi/simple"
-default = true
